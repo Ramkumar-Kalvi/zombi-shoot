@@ -31,7 +31,7 @@ backgroundSound.loop = true;
 const maxlives = 4;
 var lives = 4;
 
-//Function to make a zombie
+//Iteration 5: Write a function to create a zombie
 
 function makeZombie() {
   randomImage = img[getRandomInt(0, img.length)];
@@ -44,7 +44,7 @@ function makeZombie() {
   };
 }
 
-// Function to check if the player missed a zombie
+// Iteration 6: Write a Function to check if the player missed a zombie
 
 function checkCollision(zombie) {
   if (zombie.getBoundingClientRect().top <= 0) {
@@ -54,7 +54,7 @@ function checkCollision(zombie) {
   return false;
 }
 
-// Function to destroy a zombie when it is shot or missed
+// Iteration 7: Write a Function to destroy a zombie when it is shot
 
 function zombieDestruct(zombie) {
   zombie.style.display = "none";
